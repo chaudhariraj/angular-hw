@@ -31,3 +31,5 @@ jobs:
                 tag: github
                 registry: docker.io
                 dockerfile: Dockerfile 
+                username: chaudhariraj
+                password: Craj@2025%
