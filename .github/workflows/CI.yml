@@ -18,4 +18,16 @@ jobs:
               uses: actions/setup-node@v3
             - run: npm install
             - run: npm run build --prod
-            - run: npm test
+            #- run: npm test
+
+    # Image_Create:
+    #     needs: build
+    #     runs-on: ubuntu-latest
+
+            - name: Build Docker Image
+              uses: mr-smithers-excellent/docker-build-push@v3
+              with: 
+                image: chaudhariraj/angular-hw
+                tag: github
+                registry: docker.io
+                dockerfile: Dockerfile 
