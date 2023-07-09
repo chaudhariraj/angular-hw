@@ -1,4 +1,15 @@
 ### Write ci yaml here
-##code here 
-name : ci/cd 
-##test the git ssh
+name: CI
+ 
+on:
+    push:
+        branches: ["develop"]
+    pull_request:
+        branches: ["main"]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - uses: action/checkout@v2
