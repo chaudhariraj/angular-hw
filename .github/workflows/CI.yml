@@ -32,4 +32,4 @@ jobs:
                 registry: docker.io
                 dockerfile: Dockerfile 
                 username: chaudhariraj
-                password: Craj@2025%
+                password: Craj@2026%
